@@ -38,13 +38,10 @@ def showGraph(x, y, imgName = "img", xl = "Inputs", yl = "Outputs"):
 for i in arr:
   list = geraLista(i)
   aux.append(geraLista(i))
-  print("Pos = ", i)
 
 time =[]
 for i in range(len(aux)):
     time.append(timeit.timeit("bubbleSort({})".format(aux[i]),setup="from __main__ import bubbleSort",number=1))
-
-print("Tempo:", time)
 
 showGraph(arr, time, 'Tempo', 'Numbers', 'Time')
 showGraph(arr, operacoes, 'Iterações no laço')
