@@ -12,7 +12,7 @@ def geraLista(arr):
     return array
 
 operacoes = []
-arr = [100, 200, 500, 1000]
+arr = [10000, 20000, 50000, 100000]
 aux = []
 
 def bubbleSort(array):
