@@ -12,12 +12,6 @@ def geraLista(arr):
       if n not in array: array.append(n)
     return array
 
-#def geraLista(arr):
-    #array = list(range(1, arr + 1))
-    #shuffle(array)
-
-    #return array
-
 def listaDec(arr):
     list = []
     while arr > 0:
@@ -39,7 +33,6 @@ def selectionSort(array):
           ciclos += 1
             
         array[i], array[posMin] = array[posMin], array[i]
-        #print(array)
     return ciclos
 
 def showGraph(x, y, r, eixo, xl = "Números de elementos", yl = "Tempo", imgName = "SelectionSort"):
@@ -52,7 +45,7 @@ def showGraph(x, y, r, eixo, xl = "Números de elementos", yl = "Tempo", imgName
     plt.savefig(imgName)
 
 operacoes = []
-arr = [200, 600, 2000, 4000]
+arr = [10000, 20000, 50000, 100000]
 aux = []
 auxDec = []
 
