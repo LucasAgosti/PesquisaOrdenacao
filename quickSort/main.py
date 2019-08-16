@@ -48,7 +48,7 @@ def showGraph(x, y, xl = "Números de elementos", yl = "Saidas", imgName = "quic
     plt.xlabel(xl)
     plt.savefig(imgName)
 
-arr = [10000, 10000, 500000, 2000000]
+arr = [100000, 200000, 400000, 500000, 1000000, 2000000]
 aux = []
 
 for i in range(len(arr)):
